@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+/* font-family: 'Karla', sans-serif; */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+   
+     --color-1:hsl(179, 62%, 43%);
+     --color-2:hsl(71, 73%, 54%);
+     --color-3:hsl(204, 43%, 93%);
+     --color-4:hsl(218, 22%, 67%);
+     --color-5:#ffff;
+
+     
+
+
+
+}
+
+
+section{
+    margin:3rem 3rem; 
+    }
+
+html{
+    font-size: 10px;
+}
+body{
+    font-size: 16px;
+    background-color:var(--color-4);
+    font-family: 'Karla', sans-serif;
+
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 25rem;
+     
+}
+
+
+/* card section first start  */
+#column-1{
+    background-color:var(--color-5);
+    border-radius: 0.5rem 0.5rem 0rem 0rem ;  
+    padding: 0.5rem 1rem;
+    
+}
+#p-1{
+color:var(--color-1);
+font-weight: 700;
+}
+#p-2{
+    color:var(--color-2);
+    font-weight: 700;  
+}
+#p-3{
+    color:var(--color-4);
+    font-weight: 400;
+    max-width: 90%; 
+
+}
+
+/* card section first end  */
+
+
+/* card section second start  */
+
+
+#column-2{
+    background-color:var(--color-1);
+    padding: 0.5rem 1rem;
+
+}
+
+#p-4{
+    color:var(--color-3);
+    font-weight: 700;
+    }
+    #p-5{
+        color:var(--color-3);
+        font-weight: 700;  
+        font-size: 3rem;
+    }
+
+    
+    #p-6{
+        color:var(--color-3);
+        font-weight: 400; 
+    }
+    
+    span{
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
+    .btn{
+       background-color:var(--color-2);
+       color:var(--color-3);
+       padding: 1.5rem 5rem;
+       border-width: 0;
+       border-radius: 0.5rem;
+       font-weight: 700;   
+       
+       
+
+    }
+
+/* card section second end  */
+
+
+
+
+/* card section third start  */
+
+
+#column-3{
+    background-color:var(--color-1);
+    border-radius: 0rem 0rem 0.5rem 0.5rem ;
+    padding: 0.5rem 1rem;
+
+}
+
+#p-7{
+
+    color:var(--color-3);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+
+#p-8{
+
+    color:var(--color-3);
+    font-weight: 400;
+
+
+}
+/* card section third end  */
+
+
+/* media query start  */
+
+@media screen and (min-width:401px){
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(autofit (3,1fr));
+       
+
+    }
+    #column-1{
+        grid-column:1/4;
+
+    }
+  
+
+
+}
+
+
+
+
+
+
+
+
+
+/* media query end  */
