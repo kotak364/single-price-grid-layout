@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
 /* font-family: 'Karla', sans-serif; */
 
+/*===== css reset start=======  */
+
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
 }
+/*===== css reset end =======  */
+
+
+/*===== css varibles start =======  */
 
 :root{
    
@@ -16,7 +22,10 @@
   --white:#ffff;
 
 }
+/*===== css varibles end =======  */
 
+
+/*===== general styling start =======  */
 
 section{
     margin:3rem 3rem; 
@@ -35,6 +44,10 @@ body{
     display: grid;
     grid-template-columns: 1fr;
 }
+
+
+
+
 .card-body{
     display: flex;
     flex-direction: column;
@@ -42,9 +55,10 @@ body{
     height: 25rem;
      
 }
+/*===== general styling end =======  */
 
 
-/* card section first start  */
+/*======= card section first start========  */
 #column-1{
     background-color:var(--white);
     border-radius: 0.5rem 0.5rem 0rem 0rem ;  
@@ -66,10 +80,10 @@ font-weight: 700;
 
 }
 
-/* card section first end  */
+/*======= card section first end==========  */
 
 
-/* card section second start  */
+/*===== card section second start=========  */
 
 
 #column-2{
@@ -113,12 +127,12 @@ font-weight: 700;
 
     }
 
-/* card section second end  */
+/*======== card section second end ======  */
 
 
 
 
-/* card section third start  */
+/* ======== card section third start =====  */
 
 
 #column-3{
@@ -143,10 +157,10 @@ font-weight: 700;
 
 
 }
-/* card section third end  */
+/* ======== card section third end =====   */
 
 
-/* media query start  */
+/*===== media query start===========  */
 
 @media screen and (min-width:40rem){
 
@@ -195,4 +209,4 @@ font-weight: 700;
 
 
 
-/* media query end  */
+/*======== media query end===========  */
