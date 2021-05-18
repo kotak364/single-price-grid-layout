@@ -158,8 +158,8 @@ font-weight: 700;
                              "grid-2 grid-3";
       max-width: 75rem;
       margin: 0 auto;
-      align-content: center;
-      height: 100vh;
+
+
     
        
 
@@ -186,9 +186,7 @@ font-weight: 700;
     } 
 
     
-    section{
-        margin:5rem 0rem; 
-        }
+    
 
 }
 
