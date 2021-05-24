@@ -1,201 +1,158 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
 /* font-family: 'Karla', sans-serif; */
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+/* ========= css reset start ========  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-:root{
-   
+/* ========= css reset end ========  */
+
+/* ========= css variable start ========  */
+
+:root {
   --cyan: hsl(179, 62%, 43%);
   --bright-yellow: hsl(71, 73%, 54%);
   --light-gray: hsl(204, 43%, 93%);
   --grayish-blue: hsl(218, 22%, 67%);
-  --white:#ffff;
-
+  --white: #ffff;
 }
 
+/* ========= css variable end ========  */
 
-section{
-    margin:3rem 3rem; 
-    }
+/* ========= general styling start ========  */
 
-html{
-    font-size: 10px;
+section {
+  margin: 3rem 3rem;
 }
-body{
-    font-size: 16px;
-    background-color:var(--grayish-blue);
-    font-family: 'Karla', sans-serif;
 
+html {
+  font-size: 10px;
 }
-.container{
+body {
+  font-size: 16px;
+  background-color: var(--grayish-blue);
+  font-family: "Karla", sans-serif;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* ========= general styling end ========  */
+
+/* ========= card section start ========  */
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 25rem;
+  padding: 0.5rem 1rem;
+}
+
+/* =======  card section first start ========  */
+#column-1 {
+  background-color: var(--white);
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+}
+#p-1 {
+  color: var(--cyan);
+  font-weight: 700;
+}
+#p-2 {
+  color: var(--bright-yellow);
+  font-weight: 700;
+}
+#p-3 {
+  color: var(--grayish-blue);
+  font-weight: 400;
+  max-width: 90%;
+}
+
+/* ======= card section first end ========= */
+
+/* ========  card section second start =======  */
+
+#column-2 {
+  background-color: var(--cyan);
+}
+
+#p-4 {
+  color: var(--light-gray);
+  font-weight: 700;
+}
+#p-5 {
+  color: var(--light-gray);
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+#p-6 {
+  color: var(--light-gray);
+  font-weight: 400;
+}
+
+span {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.btn {
+  background-color: var(--bright-yellow);
+  color: var(--light-gray);
+  padding: 1.5rem 5rem;
+  border-width: 0;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  margin: 0rem 2rem;
+}
+
+/* ======== card section second end ==========  */
+
+/* ========= card section third start ======== */
+
+#column-3 {
+  background-color: var(--cyan);
+  border-radius: 0rem 0rem 0.5rem 0.5rem;
+}
+
+#p-7 {
+  color: var(--light-gray);
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+#p-8 {
+  color: var(--light-gray);
+  font-weight: 400;
+}
+/* ======== card section third end ========== */
+
+/*==========  media query start ============== */
+
+@media screen and (min-width: 40rem) {
+  .container {
     display: grid;
-    grid-template-columns: 1fr;
-}
-.card-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 25rem;
-    padding: 0.5rem 1rem;
-
-     
-}
-
-
-/* card section first start  */
-#column-1{
-    background-color:var(--white);
-    border-radius: 0.5rem 0.5rem 0rem 0rem ;  
-    
-}
-#p-1{
-color:var(--cyan);
-font-weight: 700;
-}
-#p-2{
-    color:var(--bright-yellow);
-    font-weight: 700;  
-}
-#p-3{
-    color:var(--grayish-blue);
-    font-weight: 400;
-    max-width: 90%; 
-
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "grid-1 grid-1"
+      "grid-2 grid-3";
+    max-width: 75rem;
+    margin: 0 auto;
+  }
+  #column-1 {
+    grid-area: grid-1;
+  }
+  #column-2 {
+    grid-area: grid-2;
+    border-radius: 0rem 0rem 0.5rem 0rem;
+  }
+  #column-3 {
+    grid-area: grid-3;
+    border-radius: 0rem 0rem 0.5rem 0rem;
+  }
 }
 
-/* card section first end  */
-
-
-/* card section second start  */
-
-
-#column-2{
-    background-color:var(--cyan);
-    
-
-}
-
-#p-4{
-    color:var(--light-gray);
-    font-weight: 700;
-    }
-    #p-5{
-        color:var(--light-gray);
-        font-weight: 700;  
-        font-size: 3rem;
-    }
-
-    
-    #p-6{
-        color:var(--light-gray);
-        font-weight: 400; 
-    }
-    
-    span{
-        font-weight: 400;
-        font-size: 1.5rem;
-    }
-    .btn{
-       background-color:var(--bright-yellow);
-       color:var(--light-gray);
-       padding: 1.5rem 5rem;
-       border-width: 0;
-       border-radius: 0.5rem;
-       font-weight: 700;   
-       margin: 0rem 2rem;
-  
-    
-       
-       
-
-    }
-
-/* card section second end  */
-
-
-
-
-/* card section third start  */
-
-
-#column-3{
-    background-color:var(--cyan);
-    border-radius: 0rem 0rem 0.5rem 0.5rem ;
-
-
-}
-
-#p-7{
-
-    color:var(--light-gray);
-    font-weight: 700;
-    font-size: 2rem;
-}
-
-
-#p-8{
-
-    color:var(--light-gray);
-    font-weight: 400;
-
-
-}
-/* card section third end  */
-
-
-/* media query start  */
-
-@media screen and (min-width:40rem){
-
-    .container{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-         grid-template-areas: "grid-1 grid-1" 
-                             "grid-2 grid-3";
-      max-width: 75rem;
-      margin: 0 auto;
-
-
-    
-       
-
-    }
-     #column-1{
-        grid-area:grid-1;
-
-    }
-    #column-2{
-        grid-area:grid-2;
-    border-radius: 0rem 0rem 0.5rem 0rem ;
-
-    
-
-
-    }
-    #column-3{
-        grid-area:grid-3;
-    border-radius: 0rem 0rem 0.5rem 0rem ;
-
-    
-
-
-    } 
-
-    
-    
-
-}
-
-
-
-
-
-
-
-
-
-/* media query end  */
+/* ========= media query end ========  */
